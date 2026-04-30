@@ -1458,7 +1458,7 @@
     <div class="contact-form-card">
       <div class="contact-form-title">Request a Free Quote</div>
       <div class="contact-form-sub">We'll respond within 1 business day — usually same day.</div>
-      <form id="quoteForm" name="quote-form" data-netlify="true" onsubmit="handleSubmit(event)">
+      <form id="quoteForm" name="quote-form" data-netlify="true" data-netlify-recaptcha="true" onsubmit="handleSubmit(event)">
         <div class="form-row">
           <div class="form-group">
             <label for="fname">First Name</label>
@@ -1499,6 +1499,7 @@
           <label for="message">Additional Details (Optional)</label>
           <textarea id="message" name="message" placeholder="How many windows, type of doors, anything else we should know..."></textarea>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center; font-size:15px; padding:16px">
           Send My Free Quote Request →
         </button>
